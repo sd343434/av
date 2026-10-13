@@ -101,6 +101,10 @@ jobs:
   build:
     name: Production Build
     runs-on: ubuntu-latest
+    # T3b ONLY: force this leaf to be skipped while every other job
+    # succeeds. A skipped check reports as satisfied to branch
+    # protection, so the gate must reject it explicitly.
+    if: false
     needs: lint-and-typecheck
     timeout-minutes: 10
     steps:
