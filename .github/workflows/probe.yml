@@ -146,7 +146,7 @@ jobs:
   # safe. The unsafe direction is a gate that reports `skipped`.
   # ───────────────────────────────────────────────────────────────────
   ci-gate:
-    name: CI Gate
+    name: CI Gate Renamed
     runs-on: ubuntu-latest
     timeout-minutes: 5
     if: ${{ always() }}
