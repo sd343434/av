@@ -52,3 +52,4 @@ against a real repository.
 
 Nothing here reads from, writes to, or refers to any other repository. The
 workflow makes no network calls beyond `actions/checkout`. Runs cost seconds.
+# second push to trigger concurrency cancellation
